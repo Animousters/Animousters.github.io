@@ -6,9 +6,23 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: left;
+  overflow-y: hidden;
 }
 
 .menu {
   font-family: "Merriweather", serif;
   background-color: #0009;
+  margin: 10pt 0pt 10pt 10pt;
+}
+.scroller {
+  margin: 10pt;
+  overflow-y: scroll;
+}
+.textChild {
+  margin: 10pt 0pt;
+  font-family: "Merriweather", serif;
+  background-color: #0009;
+}
+#first {
+  margin-top: 0pt;
 }
