@@ -23,10 +23,10 @@ body {
   position: absolute;
 }
 .imageBefore {
-  background-image: url(../assets/mc/imgraw1.png);
+  background-image: url(../assets/mc/imgraw0.png);
 }
 .imageAfter {
-  background-image: url(../assets/mc/imgseus1.png);
+  background-image: url(../assets/mc/imgseus0.png);
   width: 50%;
 }
 #slider {
