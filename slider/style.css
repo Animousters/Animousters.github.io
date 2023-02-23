@@ -1,0 +1,83 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.imageContainer {
+  height: 75vh;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+.image {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+}
+.imageBefore {
+  background-image: url(../assets/mc/imgraw1.png);
+}
+.imageAfter {
+  background-image: url(../assets/mc/imgseus1.png);
+  width: 50%;
+}
+#slider {
+  appearance: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  background: #0000;
+  opacity: 1;
+  margin: 0;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 75vh;
+  width: 0.5vh;
+  background: white;
+  cursor: col-resize;
+}
+#sliderButton {
+  pointer-events: none;
+  position: absolute;
+  width: 5vh;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: white;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#sliderButton::after {
+  content: "";
+  padding: 0.5vh;
+  display: inline-block;
+  border: solid #000;
+  border-width: 0 0.25vh 0.25vh 0;
+  rotate: -45deg;
+}
+#sliderButton::before {
+  content: "";
+  padding: 0.5vh;
+  display: inline-block;
+  border: solid #000;
+  border-width: 0 0.25vh 0.25vh 0;
+  rotate: 135deg;
+}
